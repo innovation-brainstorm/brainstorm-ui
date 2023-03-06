@@ -8,10 +8,20 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { NavigationComponent } from './navigation/navigation.component';
+import { LoginComponent } from './login/login.component';
+import { StrategyTableComponent } from './sections/strategy-table/strategy-table.component';
+import { ResultComponent } from './sections/result/result.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigationComponent,
+    LoginComponent,
+    StrategyTableComponent,
+    ResultComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
